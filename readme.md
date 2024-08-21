@@ -1,7 +1,15 @@
-This is a clone of the Visual Studio Code Powershell Langauge Basics @builtin extension, with a replacement improved syntax tmLangauge file (syntax highlighting) based on an improved version of the original source.
+# Full Statement Syntax Highlighting for PowerShell
 
-In order to use this extension, you must disable the @builtin extension __Powershell Langauge Basics__.
+This extension extends the basic PowerShell capabilities of VSCode to include complete full statement syntax highlighting for PowerShell files.
 
-The primary improvement in the syntax highlighting is regarding using a full statement syntaxing approach, which limits keywords and constructs to only those places where they are valid.
+If you are using a theme with semantic token highlighting enabled, and you have a recent PowerShell extension, you must disable semantic token highlighting, in order to insure the this tmLangauge grammar is used to the fullest.
 
-For more information, reference [PowerShell/EditorSyntax PR #156](https://github.com/PowerShell/EditorSyntax/pull/156).  Changes made here are also being posted to that PR.
+The primary improvement in the syntax highlighting is regarding using a full statement syntax approach, which better discerns the difference between keywords, commands, operators, parameter designators and parameter values.  This makes it possible for your theme to better highlight your code!
+
+For more information, reference [PowerShell/EditorSyntax PR #156](https://github.com/PowerShell/EditorSyntax/pull/156).
+
+This extension is meant as a preview of what PowerShell syntax highlighting could be.
+
+## Contributing
+
+I encourage all to contribute to the PowerShell/EditorSyntax repository at this time.

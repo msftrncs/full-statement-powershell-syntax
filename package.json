@@ -1,45 +1,23 @@
 {
-    "name": "powershell",
-    "displayName": "Replacement Powershell Language Basics",
-    "description": "Provides snippets, improved syntax highlighting, bracket matching and folding in Powershell files",
+    "name": "full-statement-powershell-syntax",
+    "displayName": "Full Statement Powershell Language Syntax",
+    "description": "Provide full statement syntax highlighting for PowerShell",
     "version": "1.0.0",
     "publisher": "msftrncs",
     "license": "MIT",
     "engines": {
-        "vscode": "*"
+        "vscode": "^1.0.0"
     },
     "contributes": {
-        "languages": [
-            {
-                "id": "powershell",
-                "extensions": [
-                    ".ps1",
-                    ".psm1",
-                    ".psd1",
-                    ".pssc",
-                    ".psrc"
-                ],
-                "aliases": [
-                    "PowerShell",
-                    "powershell",
-                    "ps",
-                    "ps1"
-                ],
-                "firstLine": "^#!\\s*/.*\\bpwsh\\b",
-                "configuration": "./language-configuration.json"
-            }
-        ],
         "grammars": [
             {
                 "language": "powershell",
                 "scopeName": "source.powershell",
-                "path": "./syntaxes/powershell.tmLanguage.json"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "powershell",
-                "path": "./snippets/powershell.code-snippets"
+                "path": "./syntaxes/powershell.tmLanguage.json",
+                "balancedBracketScopes": [
+                    "punctuation"
+                ],
+                "unbalancedBracketScopes": [ "punctuation.definition.variable" ]
             }
         ]
     }

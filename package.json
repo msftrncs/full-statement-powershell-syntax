@@ -8,6 +8,23 @@
     "engines": {
         "vscode": "^1.0.0"
     },
+	"repository": {
+		"url": "https://github.com/msftrncs/full-statement-powershell-syntax",
+		"type": "git"
+	},
+    "categories": [
+		"Programming Languages"
+	],
+	"author": {
+		"name": "Carl Morris"
+	},
+    "keywords": [
+        "PowerShell",
+        "ps1",
+        "shell",
+        "syntax",
+        "textmate"
+    ],
     "contributes": {
         "grammars": [
             {
